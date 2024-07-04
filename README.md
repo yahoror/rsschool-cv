@@ -1,2 +1,1 @@
-# rsschool-cv
-https://github.com/yahoror/rsschool-cvgit 
+https://yahoror.github.io/rsschool-cv/
