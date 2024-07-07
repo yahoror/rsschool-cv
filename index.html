@@ -16,79 +16,151 @@
 
 <body>
     <header>
-        <div class="container">
-            <img src="./assets/img/boy.png" alt="avatar image" class="avatar">
-            <div class="header__name">
-                <h1>Yahor Kan</h1>
-                <h3><span>Front-end Developer(Beginner)</span></h3>
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="main__info">
-            <h3>About me</h3>
-            <span>I work in the mining industry and decided to radically change my life.
-                I spend all my free time learning Frontend Development. I am interested in web development because this
-                profession provides endless opportunities for professional growth,
-                in addition, there are a huge number of free resources for self-education and a large community. I hope
-                my diligence and courses will help me gain useful knowledge.</span>
-        </div>
-        <div class="main__code">
-            <h3>Example code</h3>
-            <i>Task: Given a non-negative integer, 3 for example, return a string with a murmur: "1 sheep...2 sheep...3
-                sheep...". Input will always be valid, i.e. no negative integers.</i>
-            <pre>
-                <code>
-                  let countSheep = function (num){
-                    let str = ''
-                  for (let i = 1; i <= num; i++){
-                    str += `${i} sheep...`
-                }   
-                </code>
-            </pre>
-        </div>
-        <div class="main__skills">
-            <h3>Skills</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JS basics</li>
-                <li>Figma/Photoshop/inDesign</li>
-                <li>Git/Github</li>
-            </ul>
-        </div>
-        <div class="main__education">
-            <h3>Education</h3>
-            <div class="wrapper">
-              <div class="main__educations-univer">
-               <h4>University:</h4> 
-            <ul>
-                <li>bsuir</li>
-            </ul>
-            </div>
-            <div class="main__educations-courses">
-              <h4>Courses:</h4>  
-            <ul>
-                <li>bsuir</li>
-                <li>bsuir</li>
-                <li>bsuir</li>
-                <li>bsuir</li>
-            </ul>
-            </div>  
-            </div>
-            
-            
-        </div>
-        <div class="main__languages">
-            <h3>Languages</h3>
-            <ul>
-                <li>Russian - native speaker</li>
-                <li>English - A1</li>
-            </ul>
-        </div>
-    </main>
-    <footer>
+        <section class="header__container container">
+            <div class="header__nav">
+                <nav class="header-menu">
+                    <ul class="header-menu__list">
+                        <li class="header-menu__item">
+                            <a href="#about" class="header-menu__link">About</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#skills" class="header-menu__link">Skills</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#code" class="header-menu__link">Code</a>
+                        </li>
 
+                        <li class="header-menu__item">
+                            <a href="#education" class="header-menu__link">Education</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#languages" class="header-menu__link">Languages</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header">
+                <div class="header__photo">
+                    <img src="./assets/img/boy.png" alt="avatar image" class="avatar">
+                </div>
+                <div class="header__content">
+                    <h1>Yahor K.</h1>
+                    <h3><span>Front-end Developer(Beginner)</span></h3>
+                </div>
+            </div>
+            <div class="header__contacts">
+                <ul class="header__contacts">
+                    <li class="header__contacts-item">
+                        <h4>Location</h4>
+                        <address>Minsk, Belarus</address>
+                    </li>
+                    <li class="header__contacts-item">
+                        <h4>Phone number</h4>
+                        <p>+375 29 303-03-27</p>
+                    </li>
+                    <li class="header__contacts-item">
+                        <h4>Email</h4>
+                        <p><a href="mailto:yahorgo@gmail.com">yahorgo@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+        </section>
+
+    </header>
+
+    <main>
+        <section class="about-me" id="about">
+            <div class="about-me__container container">
+                <div class="about-me__title">
+                    <h2>About me</h2>
+                </div>
+                <div class="about-me_inner">
+                    <p>
+                        I work in the mining industry and decided to radically change my life.
+                        I spend all my free time learning Frontend Development. I am interested in web development
+                        because this
+                        profession provides endless opportunities for professional growth,
+                        in addition, there are a huge number of free resources for self-education and a large community.
+                        I hope
+                        my diligence and courses will help me gain useful knowledge.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <hr>
+        <section class="skills__container container" id="skills">
+            <div class="skills__title">
+                <h2>Skills</h2>
+            </div>
+            <div class="skills__list">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS </li>
+                    <li>Figma/Photoshop/inDesign</li>
+                    <li>Git/Github</li>
+                    <li>React basics</li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section class="code-example__container container" id="code">
+            <div class="code-example__title">
+                <h2>Code example</h2>
+            </div>
+            <div class="code-example__inner">
+                <p>Task: Given a non-negative integer, 3 for example, return a string with a murmur: <br> "1 sheep...2
+                    sheep...3
+                    sheep...". Input will always be valid, i.e. no negative integers.</p>
+                <pre>
+                    <code>
+                        let countSheep = function (num){
+                            let str = '';
+                          for (let i = 1; i <= num; i++){
+                            str += `${i} sheep...`}
+                        }
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <hr>
+        <section class="education__container container" id="education">
+            <div class="education__title">
+                <h2>Education</h2>
+            </div>
+            <div class="education__inner">
+                <p>Belarusian State University of Informatics and Radioelectronics</p>
+            </div>
+        </section>
+        <hr>
+        <section class="languages_container container" id="languages">
+            <div class="languages__title">
+                <h2>Languages</h2>
+            </div>
+            <div class="languages__inner">
+                <ul>
+                    <li>Russian - native speaker</li>
+                    <li>English - A1</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+   
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__inner-top">
+                <ul class="footer__links">
+                    <li class="full"> <span>© 2024</span> <a href="https://github.com/yahoror"> yahoror</a></li>
+                    <li class="footer__item"><a  href="https://rs.school/courses/javascript-ru"><img class="rs" src="./assets/img/rs.svg" alt="rsschool"></a></li>
+                    <li class="footer__item"><a  href="https://github.com/yahoror"><img class="git" src="./assets/img/git.png" alt="github"></a></li>
+                  </ul>
+            </div>
+            <div class="footer__inner-bottom">
+
+            </div>
+        </div>
     </footer>
 </body>
 
