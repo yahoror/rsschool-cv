@@ -24,16 +24,17 @@
                             <a href="#about" class="header-menu__link">About</a>
                         </li>
                         <li class="header-menu__item">
-                            <a href="#code" class="header-menu__link">Code</a>
-                        </li>
-                        <li class="header-menu__item">
-                            <a href="#projects" class="header-menu__link">Projects</a>
-                        </li>
-                        <li class="header-menu__item">
                             <a href="#skills" class="header-menu__link">Skills</a>
                         </li>
                         <li class="header-menu__item">
-                            <a href="#contacts" class="header-menu__link">Contacts</a>
+                            <a href="#code" class="header-menu__link">Code</a>
+                        </li>
+
+                        <li class="header-menu__item">
+                            <a href="#education" class="header-menu__link">Education</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#languages" class="header-menu__link">Languages</a>
                         </li>
                     </ul>
                 </nav>
@@ -69,7 +70,7 @@
     </header>
 
     <main>
-        <section class="about-me">
+        <section class="about-me" id="about">
             <div class="about-me__container container">
                 <div class="about-me__title">
                     <h2>About me</h2>
@@ -88,27 +89,30 @@
             </div>
 
         </section>
-        <section class="skills__container container">
+        <hr>
+        <section class="skills__container container" id="skills">
             <div class="skills__title">
                 <h2>Skills</h2>
             </div>
             <div class="skills__list">
                 <ul>
-                    <li>HTML 80%</li>
-                    <hr class="hr1">
+                    <li>HTML</li>
                     <li>CSS</li>
-                    <li>JS basics</li>
+                    <li>JS </li>
                     <li>Figma/Photoshop/inDesign</li>
                     <li>Git/Github</li>
+                    <li>React basics</li>
                 </ul>
             </div>
         </section>
-        <section class="code-example__container container">
+        <hr>
+        <section class="code-example__container container" id="code">
             <div class="code-example__title">
                 <h2>Code example</h2>
             </div>
             <div class="code-example__inner">
-                <p>Task: Given a non-negative integer, 3 for example, return a string with a murmur: <br> "1 sheep...2 sheep...3
+                <p>Task: Given a non-negative integer, 3 for example, return a string with a murmur: <br> "1 sheep...2
+                    sheep...3
                     sheep...". Input will always be valid, i.e. no negative integers.</p>
                 <pre>
                     <code>
@@ -121,7 +125,8 @@
                 </pre>
             </div>
         </section>
-        <section class="education__container container">
+        <hr>
+        <section class="education__container container" id="education">
             <div class="education__title">
                 <h2>Education</h2>
             </div>
@@ -129,7 +134,8 @@
                 <p>Belarusian State University of Informatics and Radioelectronics</p>
             </div>
         </section>
-        <section class="languages_container container">
+        <hr>
+        <section class="languages_container container" id="languages">
             <div class="languages__title">
                 <h2>Languages</h2>
             </div>

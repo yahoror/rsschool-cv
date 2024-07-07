@@ -1,7 +1,11 @@
 * {
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    
 }
+html {
+    scroll-behavior: smooth;
+    }
 
 .container {
     width: 1000px;
@@ -85,12 +89,7 @@ pre {
     margin-right: 20px;
 }
 
-.header-menu__item::before {
-    content: '';
-    height: 2px;
-    color: black;
-    transition: .5s width ease-in-out;
-}
+
 
 a:hover {
     color: black;
@@ -130,7 +129,6 @@ h3 {
 hr {
     border-width: 1px;
     width: 1000px;
-
 }
 
 .header__contacts {
@@ -182,9 +180,6 @@ ul {
     padding: 0;
 }
 
-.hr1 {
-    width: 600px;
-}
 
 code,
 pre {
