@@ -18,7 +18,7 @@
 a {
     text-decoration: none;
     display: block;
-
+    color: rgb(172, 179, 179);
 }
 
 ul {
@@ -47,9 +47,11 @@ h1 {
     font-weight: 700;
 }
 
+h3,
 h2 {
     color: rgb(172, 179, 179);
 }
+
 
 .header__content {
     display: flex;
@@ -118,69 +120,101 @@ h3 {
     margin-right: 50px;
     width: 450px;
 }
-.header{
+
+.header {
     display: flex;
     align-items: center;
     margin: 0 auto;
 }
-hr{
-    border-width: 4px;
+
+hr {
+    border-width: 1px;
     width: 1000px;
-    margin-top: 20px;
+
 }
-/*
-<main>
-        <section class="wrapper">
-           <div class="main__info fl">
-            <h2>About me</h2>
-            <span>I work in the mining industry and decided to radically change my life.
-                I spend all my free time learning Frontend Development. I am interested in web development because this
-                profession provides endless opportunities for professional growth,
-                in addition, there are a huge number of free resources for self-education and a large community. I hope
-                my diligence and courses will help me gain useful knowledge.</span>
-            </section>
-        <section class="main__code fl">
-            <h2>Example code</h2>
-            <i>Task: Given a non-negative integer, 3 for example, return a string with a murmur: "1 sheep...2 sheep...3
-                sheep...". Input will always be valid, i.e. no negative integers.</i>
-            <pre>
-                <code>
-                  let countSheep = function (num){
-                    let str = '';
-                  for (let i = 1; i <= num; i++){
-                    str += `${i} sheep...`}
-                }   
-                </code>
-            </pre>
-        </section>
-        <section class="main__skills fl">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JS basics</li>
-                <li>Figma/Photoshop/inDesign</li>
-                <li>Git/Github</li>
-            </ul>
-        </section>
-        <section class="main__education fl">
-            <h2>Education</h2>
-            <div class="wrapper">
-              <div class="main__educations-univer">
-               <h3>University:</h3> 
-            <ul>
-                <li>bsuir</li>
-            </ul>
-            </div>  
-            </div>
-        </section>
-        <section class="main__languages fl">
-            <h2>Languages</h2>
-            <ul>
-                <li>Russian - native speaker</li>
-                <li>English - A1</li>
-            </ul>
-        </section> 
-        
-    </main>
-*/
+
+.header__contacts {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.header__contacts a {
+    font-weight: 700;
+}
+
+.header__contacts p,
+address {
+    color: rgb(172, 179, 179);
+}
+
+.about-me_inner {
+    width: 750px;
+}
+
+.about-me_inner p {
+    font-size: 20px;
+}
+
+.about-me__title,
+.skills__title,
+.code-example__title,
+.education__title,
+.languages__title {
+    display: flex;
+    align-items: center;
+}
+
+.skills__list {
+    display: flex;
+    align-items: flex-start;
+    width: 750px;
+
+}
+
+.skills__list p,
+ul {
+    font-size: 20px;
+    padding: 0;
+}
+
+.hr1 {
+    width: 600px;
+}
+
+code,
+pre {
+    font-size: 0.85rem;
+    width: 750px;
+}
+
+.code-example__inner {
+    width: 750px;
+}
+
+.code-example__inner p {
+    font-size: 20px;
+}
+
+.education__container,
+.languages_container,
+.code-example__container,
+.skills__container,
+.about-me__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.education__inner {
+    width: 750px;
+    font-size: 20px;
+}
+
+.languages__inner {
+    width: 750px;
+}
+
