@@ -1,29 +1,57 @@
-.avatar{
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.avatar {
     border-radius: 50%;
     width: 250px;
     height: 250px;
 }
-body{
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
+
+a {
+    text-decoration: none;
+    display: block;
+
 }
-header{
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-weight: 300;
+
+}
+
+header {
+    display: flex;
     margin-top: 20px;
 }
-.container{
+
+.header__container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
-h1{
-    font-family: "Roboto", sans-serif;
+
+h1 {
+
     font-weight: 700;
-    font-style: normal;
 }
-h3{
-    color:rgb(172, 179, 179);
+
+h2 {
+    color: rgb(172, 179, 179);
 }
-.header__name{
+
+.header__content {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -31,18 +59,128 @@ h3{
     margin-top: 30px;
 }
 
-main{
+main {
     margin: 0 130px 0 130px;
 }
-pre{
- 
+
+pre {
+
     background-color: rgb(32, 34, 34);
     color: #FFF;
     width: 500px;
     display: block;
-    
+
 }
 
-.wrapper{
+.header-menu {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+
+}
+
+.header-menu__item {
+    margin-right: 20px;
+}
+
+.header-menu__item::before {
+    content: '';
+    height: 2px;
+    color: black;
+    transition: .5s width ease-in-out;
+}
+
+a:hover {
+    color: black;
+}
+
+.header-menu__list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-menu__link {
+    color: rgb(172, 179, 179);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.wrapper {
     display: flex;
 }
+
+.fl {
+    display: flex;
+}
+
+h3 {
+    margin-right: 50px;
+    width: 450px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+hr{
+    border-width: 4px;
+    width: 1000px;
+    margin-top: 20px;
+}
+/*
+<main>
+        <section class="wrapper">
+           <div class="main__info fl">
+            <h2>About me</h2>
+            <span>I work in the mining industry and decided to radically change my life.
+                I spend all my free time learning Frontend Development. I am interested in web development because this
+                profession provides endless opportunities for professional growth,
+                in addition, there are a huge number of free resources for self-education and a large community. I hope
+                my diligence and courses will help me gain useful knowledge.</span>
+            </section>
+        <section class="main__code fl">
+            <h2>Example code</h2>
+            <i>Task: Given a non-negative integer, 3 for example, return a string with a murmur: "1 sheep...2 sheep...3
+                sheep...". Input will always be valid, i.e. no negative integers.</i>
+            <pre>
+                <code>
+                  let countSheep = function (num){
+                    let str = '';
+                  for (let i = 1; i <= num; i++){
+                    str += `${i} sheep...`}
+                }   
+                </code>
+            </pre>
+        </section>
+        <section class="main__skills fl">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS basics</li>
+                <li>Figma/Photoshop/inDesign</li>
+                <li>Git/Github</li>
+            </ul>
+        </section>
+        <section class="main__education fl">
+            <h2>Education</h2>
+            <div class="wrapper">
+              <div class="main__educations-univer">
+               <h3>University:</h3> 
+            <ul>
+                <li>bsuir</li>
+            </ul>
+            </div>  
+            </div>
+        </section>
+        <section class="main__languages fl">
+            <h2>Languages</h2>
+            <ul>
+                <li>Russian - native speaker</li>
+                <li>English - A1</li>
+            </ul>
+        </section> 
+        
+    </main>
+*/
